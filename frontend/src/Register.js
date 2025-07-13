@@ -10,7 +10,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/users/register', form);
+      await axios.post('http://api/users/register', form);
       alert('Registered successfully! Redirecting to login...');
       navigate('/login'); // 🚀 Automatically go to login page
     } catch (error) {
